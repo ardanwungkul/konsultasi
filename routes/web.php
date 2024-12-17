@@ -22,11 +22,6 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::domain(env('PENGADUAN_URL'))->group(function () {
-    Route::get('/', function () {
-        return 'Halaman utama untuk domain1.com';
-    });
-});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
