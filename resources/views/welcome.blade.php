@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div
-                    class="flex items-center justify-center absolute lg:relative top-0 w-full h-full z-0 opacity-10 lg:opacity-100 overflow-hidden">
+                    class="flex items-center justify-center absolute lg:relative top-0 left-0 w-full h-full z-0 opacity-10 lg:opacity-100 overflow-hidden">
                     <dotlottie-player class="w-full h-full"
                         src="https://lottie.host/8caf647f-1d01-4f3a-bb3f-944d934cb732/yz8zBJavJJ.lottie"
                         background="transparent" speed="1" loop autoplay></dotlottie-player>
