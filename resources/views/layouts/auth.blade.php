@@ -23,7 +23,7 @@
     <div class="h-screen w-full md:p-20 bg-jar-auth flex items-center justify-center relative">
         <div class="absolute bg-black w-full h-full top-0 opacity-45"></div>
         <div
-            class="md:grid grid-cols-3 rounded-3xl overflow-hidden md:min-w-[671px] max-w-2xl shadow-lg border border-watercouse-600 z-10 h-full max-h-[500px] min-h-[420px]">
+            class="md:grid grid-cols-3 rounded-3xl overflow-hidden md:min-w-[671px] max-w-2xl shadow-lg border border-watercouse-600 z-10 md:h-full max-h-[500px] md:min-h-[420px] mx-3 md:mx-0">
 
             <div
                 class="col-span-1 hidden md:block group bg-gradient-to-b from-watercouse-500 via-watercouse-600 to-watercouse-700 hover:!bg-opacity-50">
@@ -32,7 +32,7 @@
                         class="group-hover:scale-125 transition-transform duration-300" alt="">
                 </div>
             </div>
-            <div class="col-span-2 bg-white overflow-hidden px-10 py-5 flex items-center h-full">
+            <div class="col-span-2 bg-white overflow-hidden px-10 py-5 flex items-center md:h-full">
                 <div class="w-full">
                     <div class="flex-col flex justify-center items-center pb-2 border-b border-gray-300">
                         <p class="text-gray-600 font-extrabold">Aplikasi Konsultasi Elektronik untuk ASN</p>

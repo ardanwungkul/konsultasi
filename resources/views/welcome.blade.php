@@ -1,30 +1,30 @@
 <x-guest-layout>
     <div class="bg-white h-screen rounded-b-3xl relative bg-jar-hero">
         <div class="h-[calc(100vh-80px)]">
-            <div class="grid md:grid-cols-2 grid-cols-1 max-w-6xl mx-auto h-full px-5 md:px-0">
+            <div class="grid lg:grid-cols-2 grid-cols-1 max-w-6xl mx-auto h-full px-5 lg:px-0">
                 <div class="flex flex-col justify-center gap-2 px-5 relative z-10">
                     <div>
-                        <p class="text-5xl font-bold">E-Konsultasi
+                        <p class="md:text-5xl text-3xl font-bold text-center md:text-start">E-Konsultasi
                         </p>
-                        <p class="text-3xl font-bold">Pemerintah Kabupaten Paser
+                        <p class="md:text-3xl text-lg font-bold text-center md:text-start">Pemerintah Kabupaten Paser
                         </p>
                     </div>
-                    <p class="text-watercouse-700 text-sm font-light">
+                    <p class="text-watercouse-700 text-sm font-light text-center md:text-start">
                         Aplikasi Konsultasi Digital untuk
                         <span class="font-extrabold py-1">
                             Aparatur Sipil Negara (ASN).
                         </span>
                     </p>
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid md:grid-cols-2 grid-cols-1 md:gap-4">
                         <a href="{{ route('login') }}"
                             class="!mt-5 border-2 border-watercouse-700 rounded-lg text-watercouse-700 font-semibold px-5 py-1 text-lg hover:bg-watercouse-700 hover:text-white transition-all duration-500 text-center w-full">Mulai
                             Konsultasi</a>
-                        <a href="{{ env('PENGADUAN_URL') }}"
+                        <a href="{{ env('PENGADUAN_URL') }}" target="_blank"
                             class="!mt-5 border-2 border-watercouse-700 rounded-lg text-watercouse-700 font-semibold px-5 py-1 text-lg hover:bg-watercouse-700 hover:text-white transition-all duration-500 text-center w-full">Pengaduan</a>
                     </div>
                 </div>
                 <div
-                    class="flex items-center justify-center absolute md:relative top-0 w-full h-full z-0 opacity-10 md:opacity-100 overflow-hidden">
+                    class="flex items-center justify-center absolute lg:relative top-0 w-full h-full z-0 opacity-10 lg:opacity-100 overflow-hidden">
                     <dotlottie-player class="w-full h-full"
                         src="https://lottie.host/8caf647f-1d01-4f3a-bb3f-944d934cb732/yz8zBJavJJ.lottie"
                         background="transparent" speed="1" loop autoplay></dotlottie-player>
@@ -34,9 +34,8 @@
         </div>
     </div>
     <div class="-mt-14 relative z-10">
-        <div class="max-w-5xl mx-auto bg-watercouse-600 rounded-3xl border shadow-lg p-5">
-
-            <div>
+        <div class="max-w-5xl mx-auto px-3">
+            <div class="bg-watercouse-600 rounded-3xl border shadow-lg p-5">
                 <div class="flex items-center justify-center gap-3">
                     <svg class="fill-white w-10" viewBox="0 0 512 512" version="1.1" xml:space="preserve"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -52,27 +51,27 @@
                 </div>
                 <p class="text-center max-w-4xl mx-auto text-xs text-white/90">
                     Aplikasi ini digunakan sebagai sarana untuk memfasilitasi konsultasi mengenai birokrasi di
-                    Pemerintahan
-                    Kabupaten Paser. Melalui aplikasi ini, masyarakat dapat menyampaikan pertanyaan terkait berbagai
-                    urusan
-                    administratif secara lebih mudah dan efisien.</p>
+                    Pemerintahan Kabupaten Paser. Melalui aplikasi ini, masyarakat dapat menyampaikan pertanyaan terkait
+                    berbagai urusan administratif secara lebih mudah dan efisien.</p>
             </div>
         </div>
     </div>
     <div class="max-w-6xl mx-auto py-10 mt-10">
-        <div class="grid grid-cols-2">
-            <div class="flex items-center justify-center">
+        <div class="grid lg:grid-cols-2 grid-cols-1 px-3 lg:px-0 relative">
+            <div class="flex items-center justify-center lg:relative absolute h-full w-full lg:opacity-100 opacity-10">
                 <dotlottie-player src="https://lottie.host/0b4a6adb-f4b9-40a1-a1e3-f8da5d6c1ae0/HFban4mqLx.lottie"
                     background="transparent" speed="1" class="w-2/3" loop autoplay></dotlottie-player>
             </div>
-            <div>
-                <p class="font-semibold text-xl mb-3">Perangkat Daerah melakukan Registrasi dan Konsultasi melalui
+            <div class="z-10 relative">
+                <p class="font-semibold md:text-xl text-lg mb-3">Perangkat Daerah melakukan Registrasi dan Konsultasi
+                    melalui
                     Aplikasi E-Konsultasi dengan langkah-langkah berikut:</p>
-                <div>
+                <div class="text-sm md:text-base">
                     <div class="flex items-center">
                         <dotlottie-player
                             src="https://lottie.host/d18221c4-daa0-4679-8b39-4312b8fad321/12uBlmUvNa.lottie"
-                            background="transparent" speed="1" class="w-20" loop autoplay></dotlottie-player>
+                            background="transparent" speed="1" class="w-20 flex-none" loop
+                            autoplay></dotlottie-player>
                         <div>
                             <p class="font-semibold">Perangkat Daerah</p>
                             <p>Mengisi data asal masing-masing perangkat daerah.</p>
@@ -81,7 +80,8 @@
                     <div class="flex items-center">
                         <dotlottie-player
                             src="https://lottie.host/d18221c4-daa0-4679-8b39-4312b8fad321/12uBlmUvNa.lottie"
-                            background="transparent" speed="1" class="w-20" loop autoplay></dotlottie-player>
+                            background="transparent" speed="1" class="w-20 flex-none" loop
+                            autoplay></dotlottie-player>
                         <div>
                             <p class="font-semibold">Area Konsultasi</p>
                             <p>Memilih area pemeriksaan yang relevan.</p>
@@ -90,7 +90,8 @@
                     <div class="flex items-center">
                         <dotlottie-player
                             src="https://lottie.host/d18221c4-daa0-4679-8b39-4312b8fad321/12uBlmUvNa.lottie"
-                            background="transparent" speed="1" class="w-20" loop autoplay></dotlottie-player>
+                            background="transparent" speed="1" class="w-20 flex-none" loop
+                            autoplay></dotlottie-player>
                         <div>
                             <p class="font-semibold">Permasalahan/Materi Konsultasi</p>
                             <p>Menjelaskan permasalahan yang akan dikonsultasikan.</p>
@@ -99,7 +100,8 @@
                     <div class="flex items-center">
                         <dotlottie-player
                             src="https://lottie.host/d18221c4-daa0-4679-8b39-4312b8fad321/12uBlmUvNa.lottie"
-                            background="transparent" speed="1" class="w-20" loop autoplay></dotlottie-player>
+                            background="transparent" speed="1" class="w-20 flex-none" loop
+                            autoplay></dotlottie-player>
                         <div>
                             <p class="font-semibold">Lampiran Materi Konsultasi</p>
                             <p>Mengunggah file atau materi yang relevan untuk konsultasi.</p>
@@ -112,8 +114,8 @@
     </div>
     <div class="py-10 mt-10">
         <div class="bg-watercouse-50 max-w-6xl mx-auto rounded-3xl shadow-lg p-5">
-            <p class="text-center text-3xl font-semibold">Alur Melakukan Konsultasi Melalui Aplikasi E-Konsultasi</p>
-
+            <p class="text-center md:text-3xl text-xl font-semibold">Alur Melakukan Konsultasi Melalui Aplikasi
+                E-Konsultasi</p>
             <div
                 class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent py-10">
                 <div
